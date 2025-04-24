@@ -32,12 +32,12 @@ services:
       - "11211"
 
   yopass:
-    image: jhaals/yopass
+    image: sandro687/zettapass:latest
     restart: always
     environment:
-      - VIRTUAL_HOST=subdomain.yourdomain.tld
-      - LETSENCRYPT_HOST=subdomain.yourdomain.tld
-      - LETSENCRYPT_EMAIL=mail@yourdomain.tld
+      - VIRTUAL_HOST=test.zettaplan.ch
+      - LETSENCRYPT_HOST=test.zettaplan.ch
+      - LETSENCRYPT_EMAIL=sandro.greter@zettaplan.ch
     command: "--memcached=memcached:11211 --port 80"
     expose:
       - "80"
