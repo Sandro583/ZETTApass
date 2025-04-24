@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: jhaals/yopass
+          images: sandro687/ZETTApass
           flavor: |
             latest=true
       - name: Build and push Docker image
