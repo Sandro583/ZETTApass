@@ -35,13 +35,12 @@ services:
     image: sandro687/zettapass:latest
     restart: always
     environment:
-      - VIRTUAL_HOST=test.zettaplan.ch
-      - LETSENCRYPT_HOST=test.zettaplan.ch
+      - VIRTUAL_HOST=testing.zettaplan.ch
+      - LETSENCRYPT_HOST=testing.zettaplan.ch
       - LETSENCRYPT_EMAIL=sandro.greter@zettaplan.ch
     command: "--memcached=memcached:11211 --port 80"
     expose:
       - "80"
-# Test
 volumes:
   certs:
   vhost.d:
