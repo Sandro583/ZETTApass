@@ -41,8 +41,7 @@ services:
     command: "--memcached=memcached:11211 --port 80"
     expose:
       - "80"
-
-# yamllint disable rule:empty-values
+      
 volumes:
   certs:
   vhost.d:
