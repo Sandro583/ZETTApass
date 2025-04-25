@@ -46,4 +46,4 @@ volumes:
   vhost.d:
   html:
   acme.sh:
-# yamllint enable rule:empty-values
+# yamllint enable rule:empty-values.
