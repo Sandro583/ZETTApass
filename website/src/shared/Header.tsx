@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Button, Box, Link } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box, Link as MuiLink } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 
@@ -13,29 +13,28 @@ export const Header = () => {
   return (
     <AppBar position="static" color="transparent" sx={{ marginBottom: 4 }}>
       <Toolbar>
-        <Link href={home} color="inherit" underline="none">
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box
-              component="img"
-              sx={{
-                width: '40px',
-                height: '40px',
-                marginRight: '8px',
-              }}
-              alt=""
-              src="zettapass.svg"
-            />
-            <Typography variant="h6" component="div">
-              ZETTApass
-            </Typography>
-          </Box>
-        </Link>
+        <MuiLink href={home} color="inherit" underline="none" sx={{ display: 'flex', alignItems: 'center' }}>
+          <Box
+            component="img"
+            sx={{
+              width: '40px',
+              height: '40px',
+              marginRight: '8px',
+            }}
+            alt=""
+            src="zettapass.svg"
+          />
+          <Typography variant="h6" component="div">
+            ZETTApass
+          </Typography>
+        </MuiLink>
         <Box sx={{ marginLeft: 'auto' }}>
           <Button
-            component={Link}
+            component={MuiLink}
             href={isOnUploadPage ? home : upload}
             variant="contained"
             color="primary"
+            underline="none"
           >
             {isOnUploadPage ? t('header.buttonHome') : t('header.buttonUpload')}
           </Button>
