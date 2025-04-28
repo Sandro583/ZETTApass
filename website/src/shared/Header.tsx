@@ -23,7 +23,7 @@ export const Header = () => {
                 marginRight: '8px',
               }}
               alt=""
-              src="yopass.svg"
+              src="zettapass.svg"
             />
             <Typography variant="h6" component="div">
               ZETTApass
