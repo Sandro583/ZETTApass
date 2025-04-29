@@ -30,7 +30,7 @@ export const Attribution = () => {
         </Typography>
         <Typography variant="body2" color="textSecondary">
           {t('attribution.changedBy')}{' '}
-          <Link href="https://github.com/Sandro583/ZETTApass">Sandro Greter</Link>
+          <Link href="https://github.com/Sandro583/ZETTApass">Sandro Greter.</Link>
         </Typography>
       </Box>
       {t('attribution.translatorName') && translationAttribution()}
