@@ -17,16 +17,22 @@ export const Attribution = () => {
 
   return (
     <Container>
-      <Typography
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        gap={2}
         margin={4}
-        variant="body2"
-        color="textSecondary"
-        align="center"
       >
-        {t('attribution.createdBy')}{' '}
-        <Link href="https://github.com/jhaals/yopass">Johan Haals</Link>
-        <Link href="https://github.com/Sandro583/ZETTApass">Sandro Greter</Link>
-      </Typography>
+        <Typography variant="body2" color="textSecondary">
+          {t('attribution.createdBy')}{' '}
+          <Link href="https://github.com/jhaals/yopass">Johan Haals</Link>
+        </Typography>
+        <Typography variant="body2" color="textSecondary">
+          {t('attribution.changedBy')}{' '}
+          <Link href="https://github.com/Sandro583/ZETTApass">Sandro Greter</Link>
+        </Typography>
+      </Box>
       {t('attribution.translatorName') && translationAttribution()}
     </Container>
   );
