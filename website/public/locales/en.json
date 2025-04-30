@@ -15,9 +15,9 @@
     "errorFileTooLarge": "Datei ist zu gross"
   },
   "display": {
-    "titleFetching": "Fetching from database, please hold...",
-    "titleDecrypting": "Decrypting, please hold...",
-    "titleDecryptionKey": "Enter decryption key",
+    "titleFetching": "Abruf von der Datenbank, bitte warten...",
+    "titleDecrypting": "Entschlüsselung, bitte warten...",
+    "titleDecryptionKey": "Dechiffrierschlüssel eingeben",
     "captionDecryptionKey": "Aktualisieren Sie dieses Fenster nicht, da das Geheimnis möglicherweise auf einen einmaligen Download beschränkt ist.",
     "inputDecryptionKeyPlaceholder": "Dechiffrierschlüssel",
     "inputDecryptionKeyLabel": "Ein Dechiffrierschlüssel ist erforderlich, bitte geben Sie ihn unten ein",
@@ -62,7 +62,7 @@
   },
   "attribution": {
     "createdBy": "Erstellt von",
-    "translatedBy": "Translated by",
+    "translatedBy": "Übersetzt von",
     "translatorName": "",
     "translatorLink": ""
   },
